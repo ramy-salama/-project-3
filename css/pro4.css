@@ -3,7 +3,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: auto;
-    margin-left: auto;
 }
 
 html {
@@ -14,33 +13,7 @@ body {
     font-family: "Trebuchet MS", sans-serif;
 }
 
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-/* small */
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-/* medium */
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-/* large */
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
 
 header h1 {
     margin: -20px 0 0 75px;
@@ -124,11 +97,6 @@ h2 {
 
 }
 
-@media (max-width: 576px) {
-    .display-width {
-        margin-left: 5px;
-    }
-}
 
 .slider {
     display: flex;
@@ -160,6 +128,30 @@ h2 {
     height: 70px;
     width: 380px;
 
+}
+
+@media (max-width: 576px) {
+    .display-width {
+        margin-left: 5px;
+    }
+
+    .mainNews {
+        width: 370px;
+
+    }
+
+    .newsInfo {
+        width: 355px;
+    }
+
+    .newsInfo .image img {
+        width: 355px;
+    }
+
+    .newsInfo .label1 {
+        width: 350px;
+
+    }
 }
 
 .newsInfo .label1 a {
@@ -315,7 +307,7 @@ h2 {
 .features {
     padding-left: 15px;
     padding-right: 15px;
-    margin: 80px auto;
+    margin: 80px 0;
 }
 
 .features .tours {
@@ -361,10 +353,11 @@ h2 {
 .link {
     padding: 5px;
     background-color: #38a0ca;
+    margin-left: 5px;
 }
 
 .link a {
-    padding-left: 10px;
+    padding-left: 15px;
     text-decoration: none;
     color: #fff;
 }
@@ -378,6 +371,8 @@ h2 {
     align-items: center;
     display: flex;
     height: 144px;
+    width: 100%;
+    margin-left: 5px;
     padding-left: 25px;
     padding-right: 25px;
     background-color: #3b3a3a;
